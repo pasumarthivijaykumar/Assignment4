@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "3e8a8c97-5ceb-432c-ac1e-355524826b3d",
+		"name": "AnuAssignment-4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:28083/chatMsg/addChat",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"sendingUser\": \"anu\",\n\"receivingUser\": \"vijay\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:28083/addChat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"addChat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:28083/chatMsg/showChat/{1}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28083/showLastChat/108",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"showLastChat",
+						"108"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:28083/chatMsg/showLastChat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28083/showLastChat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"showLastChat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:28083/showAllChats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28083/showAllChats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"showAllChats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:28083/updateChat/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28083/updateChat/182",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"updateChat",
+						"182"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:28083/updateChatReaction/{id}/{reaction}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28083/updateChatReaction/182/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"updateChatReaction",
+						"182",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:28083/deleteChatItem/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28083/deleteChatItem/182",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"deleteChatItem",
+						"182"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:28083/deleteAll",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28083/deleteAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28083",
+					"path": [
+						"deleteAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
